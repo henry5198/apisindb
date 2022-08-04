@@ -1,0 +1,21 @@
+Para usar nodemon:
+instalar nodemon como dependencia
+luego en package.json crear el script
+
+"scripts": {
+    "serve": "nodemon index.js",
+}
+y ejecutar "npm run serve"
+
+Para desplegar en Heroku sin DB:
+se debe colocar en package.json el 
+"engines": {
+    "node": "16.14.2",
+    "npm": "8.5.0"
+  }
+
+y se debe colocar el script 
+
+"scripts": {
+    "start": "node index.js",
+}
