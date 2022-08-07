@@ -8,8 +8,8 @@ app.use(express.urlencoded({extended: true}));
 //cargamos el archivo de rutas
 app.use(require('./routes/articulos'));
 
-app.listen(process.env.PORT||3000,() => {
-    console.log("Servidor corriendo en el puerto 3000");
+app.listen(8080,() => {
+    console.log("Servidor corriendo en el puerto 8080");
 });
 
 module.exports = app;
